@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<style>
+    #messages {
+        border: 1px solid black;
+        min-height: 20px;
+    }
+</style>
+<script type="text/javascript">
+	var img = document.getElementById("image");
+	img.onerror = function () { 
+	    alert('not found');
+	}
+</script>
+<script src="rtc.min.js"></script>
+<script src="jquery-2.1.1.js"></script>
+<script src="jquery-image-blob.min.js"></script>
+<body>
+    <div id="messages" contenteditable></div>
+    <script src="rtc-text-chat.js"></script>
+    <img id="image" src="imaes.jpg" onerror="erroo(this);">
+</body>
